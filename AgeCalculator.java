@@ -13,21 +13,18 @@ public class AgeCalculator
     /**
      * Constructor for objects of class AgeCalculator
      */
-    public AgeCalculator()
+    public int getAge(int year_of_birth)
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        year_of_birth = 2004;
+        // age = currentYear - year_of_birth;
+         // if(age>=16){
+         // System.out.println("able to drive");
+         
+        // }
+        // else{ 
+            // //16-age = missing_year;
+            // System.out.println("not eligible to drive"+ missing_year);
+        // }
+        return 0;
     }
 }
