@@ -21,7 +21,10 @@ public class Bird
         this.breed = breed;
         this.age = age;
     }
-
+    public String color(){
+        return color;
+    }
+    
     /**
      * An example of a method - replace this comment with your own
      *
@@ -30,7 +33,6 @@ public class Bird
      */
     public void sing()
     {
-        // put your code here
         System.out.println("Bird_vocalization_in_action...");
     }
 }

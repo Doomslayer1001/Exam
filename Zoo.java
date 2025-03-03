@@ -7,22 +7,37 @@ import java.util.ArrayList;
  */
 public class Zoo
 {
-       // instance variables - replace the example below with your own
+     // while(intBlue_bird){
+            // listArrayList<>;
+            // Count"Blue"
+        // }
     private ArrayList<Bird> zooBird;
-
+    
     /**
      * Constructor for objects of class Zoo
      */
     public Zoo()
     {
-        
+        zooBird = new ArrayList<>();
+        zooBird.add(new Bird("blue","blue jay",2));
+        zooBird.add(new Bird("red","red cardinal",1));
+        zooBird.add(new Bird("blue","red cardinal",1));
+        zooBird.add(new Bird("red","red cardinal",1));
+        zooBird.add(new Bird("blue","red cardinal",1));
+        zooBird.add(new Bird("blue","red cardinal",1));
+        zooBird.add(new Bird("blue","red cardinal",1));
+        zooBird.add(new Bird("red","red cardinal",1));
+        zooBird.add(new Bird("red","red cardinal",1));
     }
 
     int countBlueBirds(){
-        // while(intBlue_bird){
-            // listArrayList<>;
-            // Count"Blue"
-        // }
-        return 0;
+        int countBlueBirds = 0;
+        for(Bird b : zooBird){
+            if (b.color().equals("blue")){
+                countBlueBirds++;
+            }
+            
+        }
+        return countBlueBirds;
     }   
 }
